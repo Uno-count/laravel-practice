@@ -7,5 +7,8 @@ use Illuminate\Foundation\Auth\User as AuthUser;
 
 class User extends AuthUser
 {
-
+    public function getFullname()
+    {
+        return "{$this->firstname} {$this->lastname}";
+    }
 }
